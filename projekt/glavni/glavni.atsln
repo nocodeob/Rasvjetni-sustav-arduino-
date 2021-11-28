@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Atmel Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "glavni", "glavni.cppproj", "{B4705718-F181-41EC-825B-03E8FD74F846}"
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "set_time", "..\set_time\set_time.cppproj", "{26FED350-1924-46DE-B2DE-39560E60405A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|AVR = Debug|AVR
+		Release|ARM = Release|ARM
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4705718-F181-41EC-825B-03E8FD74F846}.Debug|ARM.ActiveCfg = Debug|AVR
+		{B4705718-F181-41EC-825B-03E8FD74F846}.Debug|AVR.ActiveCfg = Debug|AVR
+		{B4705718-F181-41EC-825B-03E8FD74F846}.Debug|AVR.Build.0 = Debug|AVR
+		{B4705718-F181-41EC-825B-03E8FD74F846}.Release|ARM.ActiveCfg = Release|AVR
+		{B4705718-F181-41EC-825B-03E8FD74F846}.Release|AVR.ActiveCfg = Release|AVR
+		{B4705718-F181-41EC-825B-03E8FD74F846}.Release|AVR.Build.0 = Release|AVR
+		{26FED350-1924-46DE-B2DE-39560E60405A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{26FED350-1924-46DE-B2DE-39560E60405A}.Debug|ARM.Build.0 = Debug|ARM
+		{26FED350-1924-46DE-B2DE-39560E60405A}.Debug|AVR.ActiveCfg = Debug|ARM
+		{26FED350-1924-46DE-B2DE-39560E60405A}.Release|ARM.ActiveCfg = Release|ARM
+		{26FED350-1924-46DE-B2DE-39560E60405A}.Release|ARM.Build.0 = Release|ARM
+		{26FED350-1924-46DE-B2DE-39560E60405A}.Release|AVR.ActiveCfg = Release|ARM
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.ARMGCC.CPP</ToolchainName>
+    <ProjectGuid>{26fed350-1924-46de-b2de-39560e60405a}</ProjectGuid>
+    <avrdevice>ATSAM3X8E</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>set_time</AssemblyName>
+    <Name>set_time</Name>
+    <RootNamespace>set_time</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress />
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue />
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>1</eraseonlaunchrule>
+    <AsfFrameworkConfig>
+      <framework-data>
+  <options />
+  <configurations />
+  <files />
+  <documentation help="" />
+  <offline-documentation help="" />
+  <dependencies>
+    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.25.0" />
+  </dependencies>
+</framework-data>
+    </AsfFrameworkConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <ArmGccCpp>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__HARDWARE_MK20dx128__</Value>
+      <Value>__HARDWARE_MK20DX128__</Value>
+      <Value>ARDUINO=106012</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__TEENSY3__</Value>
+      <Value>__MK20DX128__</Value>
+      <Value>TEENSYDUINO=131</Value>
+      <Value>F_CPU={build.fcpu}</Value>
+      <Value>{build.usbtype}</Value>
+      <Value>LAYOUT_{build.keylayout}</Value>
+    </ListValues>
+  </armgcc.compiler.symbols.DefSymbols>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/DS1307RTC</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/Time</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/Wire</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/Wire/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries</Value>
+      <Value>C:/Users/Vedran/Documents/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/avr</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/util</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/utils</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/../tools/arm/bin/../arm-none-eabi/include</Value>
+      <Value>../../../set_time</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
+  <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+  <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+  <armgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__HARDWARE_MK20dx128__</Value>
+      <Value>__HARDWARE_MK20DX128__</Value>
+      <Value>ARDUINO=106012</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__TEENSY3__</Value>
+      <Value>__MK20DX128__</Value>
+      <Value>TEENSYDUINO=131</Value>
+      <Value>F_CPU={build.fcpu}</Value>
+      <Value>{build.usbtype}</Value>
+      <Value>LAYOUT_{build.keylayout}</Value>
+    </ListValues>
+  </armgcccpp.compiler.symbols.DefSymbols>
+  <armgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/DS1307RTC</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/Time</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/Wire</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/Wire/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries</Value>
+      <Value>C:/Users/Vedran/Documents/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/avr</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/util</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/utils</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/../tools/arm/bin/../arm-none-eabi/include</Value>
+      <Value>../../../set_time</Value>
+    </ListValues>
+  </armgcccpp.compiler.directories.IncludePaths>
+  <armgcccpp.compiler.optimization.level>Optimize (-O1)</armgcccpp.compiler.optimization.level>
+  <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+  <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+  <armgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.Libraries>
+  <armgcccpp.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>../cmsis/linkerScripts</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.LibrarySearchPaths>
+  <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+  <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsamd21e18a_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
+  <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
+  <armgcccpp.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\samd21\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcccpp.preprocessingassembler.general.IncludePaths>
+  <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+</ArmGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/DS1307RTC;C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/Time;C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/Wire;C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/Wire/utility;C:/Program Files (x86)/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries;C:/Users/Vedran/Documents/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3;C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/avr;C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/util;C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/utils;C:/Program Files (x86)/Arduino/hardware/teensy/../tools/arm/bin/../arm-none-eabi/include;../../../set_time;</VMSETTING_IncludePaths>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <ArmGccCpp>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__HARDWARE_MK20dx128__</Value>
+      <Value>__HARDWARE_MK20DX128__</Value>
+      <Value>ARDUINO=106012</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__TEENSY3__</Value>
+      <Value>__MK20DX128__</Value>
+      <Value>TEENSYDUINO=131</Value>
+      <Value>F_CPU={build.fcpu}</Value>
+      <Value>{build.usbtype}</Value>
+      <Value>LAYOUT_{build.keylayout}</Value>
+    </ListValues>
+  </armgcc.compiler.symbols.DefSymbols>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/DS1307RTC</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/Time</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/Wire</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/Wire/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries</Value>
+      <Value>C:/Users/Vedran/Documents/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/avr</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/util</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/utils</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/../tools/arm/bin/../arm-none-eabi/include</Value>
+      <Value>../../../set_time</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
+  <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+  <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+  <armgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__HARDWARE_MK20dx128__</Value>
+      <Value>__HARDWARE_MK20DX128__</Value>
+      <Value>ARDUINO=106012</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__TEENSY3__</Value>
+      <Value>__MK20DX128__</Value>
+      <Value>TEENSYDUINO=131</Value>
+      <Value>F_CPU={build.fcpu}</Value>
+      <Value>{build.usbtype}</Value>
+      <Value>LAYOUT_{build.keylayout}</Value>
+    </ListValues>
+  </armgcccpp.compiler.symbols.DefSymbols>
+  <armgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/DS1307RTC</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/Time</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/Wire</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/Wire/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries</Value>
+      <Value>C:/Users/Vedran/Documents/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/avr</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/util</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/utils</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/../tools/arm/bin/../arm-none-eabi/include</Value>
+      <Value>../../../set_time</Value>
+    </ListValues>
+  </armgcccpp.compiler.directories.IncludePaths>
+  <armgcccpp.compiler.optimization.level>Optimize (-O1)</armgcccpp.compiler.optimization.level>
+  <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+  <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+  <armgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.Libraries>
+  <armgcccpp.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>../cmsis/linkerScripts</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.LibrarySearchPaths>
+  <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+  <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsamd21e18a_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
+  <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
+  <armgcccpp.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\samd21\include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+      <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+    </ListValues>
+  </armgcccpp.preprocessingassembler.general.IncludePaths>
+  <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+</ArmGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/DS1307RTC;C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/Time;C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/Wire;C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/Wire/utility;C:/Program Files (x86)/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries;C:/Users/Vedran/Documents/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3;C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/avr;C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/util;C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/utils;C:/Program Files (x86)/Arduino/hardware/teensy/../tools/arm/bin/../arm-none-eabi/include;../../../set_time;</VMSETTING_IncludePaths>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="set_time.ino">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="__vm\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="__vm\.set_time.vsarduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
